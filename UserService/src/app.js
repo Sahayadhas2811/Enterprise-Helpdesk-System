@@ -1,6 +1,7 @@
 const express = require('express')
-const userRouter = require('./Routers/user.router')
+const userRouter = require('./modules/Register/register.router')
 const connectDB = require('./Config/db')
+const errorHandler = require('./middleware/errorHandler')
 const app = express()
 
 connectDB()
@@ -14,4 +15,5 @@ app.get('/', (req, res)=>{
 
 app.use('/userService', userRouter)
 
+app.use(errorHandler.errorHandler);
 module.exports = app;

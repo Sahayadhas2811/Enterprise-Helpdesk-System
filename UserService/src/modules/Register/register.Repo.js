@@ -1,4 +1,4 @@
-const user = require("../Model/UserSchema");
+const user = require("./registerSchema.model");
 
 const findByUserId = async(userId)=>{
 

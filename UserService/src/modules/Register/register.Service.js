@@ -1,4 +1,4 @@
-const userRepo = require('../Repository/user.Repo')
+const userRepo = require('./register.Repo')
 const bcrypt = require('bcrypt')
 const saltCount = 10;
 

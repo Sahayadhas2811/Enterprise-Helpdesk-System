@@ -1,4 +1,4 @@
-const userRepo = require('../Repository/user.Repo');
+const userRepo = require('../Register/register.Repo');
 
 const profile = async(data)=>{
 
